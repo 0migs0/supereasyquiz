@@ -1,0 +1,76 @@
+<html>
+<head>
+    <title>minigame2</title>
+    <style>
+        body {
+            background: linear-gradient(rgb(255, 130, 130), rgb(255, 127, 127), rgb(255, 165, 165));
+        }
+        .container {
+          position: relative;
+          width: 100vw;
+          height: 100px;
+          display: flex;
+          justify-content: center;
+          align-items: flex-start; /* Moves content towards the top */
+          padding-top: 100px; 
+        }
+        @keyframes moveInCircle {
+          0% { transform: translate(200px, 0); }
+          25% { transform: translate(0, 200px); }
+          50% { transform: translate(-200px, 0); }
+          75% { transform: translate(0, -200px); }
+          100% { transform: translate(200px, 0); }  
+        }
+        #button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            border: solid 10px rgb(255, 141, 160);
+            background-color: pink ;
+            border-radius: 200px;
+            transition: 0.7s ease;
+            cursor: pointer;
+            animation: moveInCircle 0.5s infinite;
+        }
+        #finish {
+            text-align: center;
+            margin-top: 10000vh;
+        }
+        #thanks {
+            text-align: center;
+            margin-top: 10000vh;
+        }          
+    </style>
+</head>
+<body>
+    <div>
+        <h1 align="center" id="game">Click the button</h1>    <a href="index.html"><button>Back to Quiz</button></a><br><br><br><br><br><br><br><br>
+        <div class="container">
+        <a href="#finish"><button id="button">J</button></a>
+        </div>
+
+        <div>
+        <h4>This a banger 🤘&downarrow;</h4>
+        <audio src="bgm.mp3" loop controls>
+            Hello
+        </audio>
+
+        <div id="finish">
+            <h1>Good Boy! ❤️❤️😀😍🥰💘💖💞❤️</h1>
+            <a href="index.html"><button>Back to Quiz</button></a><br><br>
+            <h2>
+                Which is better? This minigame or the first minigame?<br> (Find minigame1 back in the quiz)<br>
+                <a href="#thanks"><button>minigame2</button></a><a href="#thanks"><button>minigame1</button></a>
+            </h2>
+            <div id="thanks">
+                <h1>Thanks for your feedback! ❤️❤️😀😍🥰💘💖💞❤️</h1>
+                <a href="#game"><button>Back to Game</button></a>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
